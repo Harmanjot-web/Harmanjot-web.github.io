@@ -1,3 +1,4 @@
+
 /* ── RESET & ROOT ── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -445,6 +446,114 @@ h2 {
 
 .skill-tag.backend .dot {
   background: #4ade80;
+}
+
+/* ── PROJECTS ── */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 32px;
+  transition: all 0.25s;
+}
+
+.project-card:hover {
+  border-color: rgba(124, 106, 247, 0.4);
+  transform: translateY(-2px);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+
+.project-name {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 12px;
+  transition: all 0.2s;
+}
+
+.project-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.project-desc {
+  color: #b0b0c8;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack-tag {
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.wip-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(247, 162, 106, 0.07);
+  border: 1px dashed rgba(247, 162, 106, 0.3);
+  border-radius: 10px;
+  padding: 16px 20px;
+  color: var(--accent2);
+  font-size: 0.875rem;
+}
+
+.wip-icon { font-size: 1.3rem; }
+
+.wip-title {
+  display: block;
+  color: var(--accent2);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.wip-desc {
+  font-size: 0.82rem;
+  color: var(--muted);
 }
 
 /* ── PROJECTS — COMING SOON ── */

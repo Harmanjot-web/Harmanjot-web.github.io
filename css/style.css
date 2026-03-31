@@ -1,21 +1,22 @@
-
 /* ── RESET & ROOT ── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --bg:      #0a0a0f;
-  --bg2:     #111118;
-  --card:    #16161f;
-  --border:  #232330;
-  --accent:  #7c6af7;
+  --bg: #0a0a0f;
+  --bg2: #111118;
+  --card: #16161f;
+  --border: #232330;
+  --accent: #7c6af7;
   --accent2: #f7a26a;
-  --text:    #e8e8f0;
-  --muted:   #7a7a9a;
-  --tag-bg:  #1e1e2e;
+  --text: #e8e8f0;
+  --muted: #7a7a9a;
+  --tag-bg: #1e1e2e;
 }
 
 /* ── BASE ── */
@@ -168,8 +169,15 @@ nav {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.4; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
 }
 
 h1 {
@@ -542,7 +550,9 @@ h2 {
   font-size: 0.875rem;
 }
 
-.wip-icon { font-size: 1.3rem; }
+.wip-icon {
+  font-size: 1.3rem;
+}
 
 .wip-title {
   display: block;
@@ -718,19 +728,97 @@ footer a:hover {
   color: var(--text);
 }
 
-/* ── FADE-IN ANIMATION ── */
+
+/* ── keyframe ── */
 .fade-in {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(30px);
+}
+
+@keyframes sectionReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in.visible {
-  opacity: 1;
-  transform: none;
+  animation: sectionReveal 0.7s ease-out forwards;
 }
 
-/* ── RESPONSIVE ── */
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+    letter-spacing: 0.05em;
+  }
+
+  100% {
+    opacity: 1;
+    letter-spacing: normal;
+  }
+}
+
+.hero-title {
+  animation: fadeText 1s ease forwards;
+}
+
+@keyframes buttonPop {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.animated-btn:hover {
+  animation: buttonPop 0.2s ease forwards;
+}
+
+@keyframes liftCard {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.animated-card:hover {
+  animation: liftCard 0.25s ease forwards;
+}
+
+@keyframes floatBlob {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(30px, -20px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.blob-1 {
+  animation: floatBlob 14s ease-in-out infinite;
+}
+
+.blob-2 {
+  animation: floatBlob 18s ease-in-out infinite reverse;
+}
+
+
+/* media query */
 @media (max-width: 620px) {
   .about-grid {
     grid-template-columns: 1fr;

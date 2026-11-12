@@ -45,7 +45,6 @@ textarea {
 }
 
 
-/* NAVIGATION */
 
 .topbar {
     position: fixed;
@@ -165,8 +164,6 @@ textarea {
 }
 
 
-/* HERO */
-
 .panel {
     min-height: 100svh;
     position: relative;
@@ -255,8 +252,6 @@ textarea {
 }
 
 
-/* HERO VISUAL */
-
 .hero-visual {
     position: absolute;
     top: 0;
@@ -333,7 +328,6 @@ textarea {
 }
 
 
-/* GENERAL SECTIONS */
 
 .section {
     position: relative;
@@ -365,7 +359,6 @@ textarea {
 }
 
 
-/* ABOUT */
 
 .split {
     display: grid;
@@ -420,7 +413,6 @@ textarea {
 }
 
 
-/* EDUCATION */
 
 .education-card {
     display: grid;
@@ -472,7 +464,6 @@ textarea {
 }
 
 
-/* ACADEMIC ACHIEVEMENT */
 
 .achievement-card {
     display: flex;
@@ -532,7 +523,6 @@ textarea {
 }
 
 
-/* SKILLS */
 
 .skill-row {
     display: grid;
@@ -580,7 +570,6 @@ textarea {
 }
 
 
-/* PROJECTS */
 
 .project-grid {
     display: grid;
@@ -612,7 +601,6 @@ textarea {
 }
 
 
-/* PORTFOLIO MOCKUP */
 
 .mini-browser {
     width: 76%;
@@ -653,7 +641,6 @@ textarea {
 }
 
 
-/* DASHBOARD MOCKUP */
 
 .dashboard {
     width: 80%;
@@ -743,7 +730,6 @@ textarea {
 }
 
 
-/* PROJECT SCREENSHOTS */
 
 .twilight-art,
 .jobboard-art {
@@ -773,7 +759,6 @@ textarea {
 }
 
 
-/* PROJECT DETAILS */
 
 .project-meta {
     display: flex;
@@ -846,7 +831,6 @@ textarea {
 }
 
 
-/* CURRENTLY EXPLORING */
 
 .current-grid {
     display: grid;
@@ -876,7 +860,6 @@ textarea {
 }
 
 
-/* PERSONAL INTERESTS */
 
 .interests-grid {
     display: grid;
@@ -914,7 +897,6 @@ textarea {
 }
 
 
-/* CONTACT */
 
 .contact {
     padding-bottom: 60px;
@@ -947,7 +929,6 @@ textarea {
 }
 
 
-/* CONTACT FORM */
 
 .contact-form {
     max-width: 850px;
@@ -1059,7 +1040,6 @@ textarea {
 }
 
 
-/* FOOTER */
 
 .portfolio-page footer {
     display: flex;
@@ -1083,8 +1063,6 @@ textarea {
 }
 
 
-/* SCROLL ANIMATIONS */
-
 .reveal {
     opacity: 0;
     transform: translateY(35px);
@@ -1100,7 +1078,7 @@ textarea {
 }
 
 
-/* COVER PAGE */
+
 
 .cover-page {
     min-height: 100vh;
@@ -1279,9 +1257,6 @@ textarea {
     letter-spacing: 1px;
 }
 
-
-/* TABLET NAVIGATION */
-
 @media (max-width: 950px) {
 
     .topbar {
@@ -1353,8 +1328,6 @@ textarea {
 }
 
 
-/* TABLET */
-
 @media (max-width: 800px) {
 
     .hero-center {
@@ -1423,7 +1396,6 @@ textarea {
 }
 
 
-/* MOBILE */
 
 @media (max-width: 540px) {
 
@@ -1558,7 +1530,6 @@ textarea {
 }
 
 
-/* COVER PAGE MOBILE */
 
 @media (max-width: 600px) {
 
